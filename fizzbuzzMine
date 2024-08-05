@@ -1,0 +1,22 @@
+// This fizzbuzz is made for me. but can't work, later i will comeback to learn what happen with this code
+
+function fizzBuzz(num) {
+    const outputElement = document.getElementById('output');
+    let result = '';
+
+    for(let i = 0; i <= num; i++) {
+        if((i % 3 === 0) && (i % 5 === 0)) {
+            console.log("FizzBuzz");
+        } else if(i % 3 === 0) {
+            console.log("Fizz");
+        } else if(i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+
+    outputElement.textContent = result;
+}
+
+fizzBuzz(35);
